@@ -1,14 +1,13 @@
 #include <stdio.h>
 
-// Definicion de constante. N es utilizada para determinar
-// tamanio del arreglo 'A'
+// N tamanio del arreglo 'A'
 #define N 10
 
 // A[N] puede ser definida con otros valores
 int A[N] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
 
 
-/* Intercambia el contenido de dos posiciones del arreglo a[0,N] */
+/* Intercambia el contenido entre 'i' y 'j' posiciones del arreglo a[0,N] */
 // proc swap(in/out a:array of T, in i,j:nat)
 // PRE: 0 <= i,j <= N y a = A
 void swap(int a[N], int i, int j) {
