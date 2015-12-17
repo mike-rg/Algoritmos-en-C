@@ -25,7 +25,7 @@ void swap(int a[N], int i, int j) {
 // PRE: 0 < i <= N
 int insert(int a[N], int i) {
    int j = i;
-   // INVARIANTE: //
+   // INVARIANTE: a[1'j,i] y a[j,i] estan ordenados y 'a' es permutacion de A
    while (j > 0 && a[j] < a[j - 1]) {
        swap(a, j, j - 1);	
        j = j - 1;
@@ -40,7 +40,7 @@ int insert(int a[N], int i) {
 void insertion_sort (int a[N], int n) {
     int i, minp;
     i = 1;
-    // INVARIANTE: //
+    // INVARIANTE: a[1,i) esta ordenado y 'a' es permutacion de A
     while (i < n) {
 	insert(a,i);
         i = i + 1;
